@@ -4,7 +4,7 @@
 ## API
 [openweathermap](http://openweathermap.org/api)
 ## Install
-#### Install dependencies - Carthage
+#### Install dependencies (Carthage)
 ```
 carthage update --platform iOS
 ```
