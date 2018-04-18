@@ -30,13 +30,13 @@ class AppConfig {
         forecastService.get { data, _ in
             guard let data = data else { return }
             data.forecasts.forEach { forecast in
-                var _forecast = forecast
+                var workingForecast = forecast
                 self.imageService.get(for: Router.image(iconName: forecast.weathers[0].icon ?? "")) { image, _ in
                     guard let image = image, let data = UIImagePNGRepresentation(image) else {
                         return
                     }
-                    _forecast.imageData = data
-                    _ = self.weatherRepository.addForecast(_forecast)
+                    workingForecast.imageData = data
+                    _ = self.weatherRepository.addForecast(workingForecast)
                 }
             }
         }
