@@ -17,7 +17,7 @@ class WeatherRepositoryTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        coreDataStack = MockCoreDataStack()
+        coreDataStack = CoreDataStack()
         weatherRepository = WeatherRepository(
             managedObjectContext: coreDataStack.mainContext,
             coreDataStack: coreDataStack)
@@ -34,23 +34,4 @@ class WeatherRepositoryTests: XCTestCase {
 
         XCTAssertNotNil(weathers)
     }
-
-    func testGivenAValidWeather_whenAddForecast_itsSaved() {
-        let context = coreDataStack.newDerivedContext()
-        weatherRepository = WeatherRepository(managedObjectContext: context, coreDataStack: coreDataStack)
-        let main = Weather(description: "Pluie", icon: "icon")
-        let details = Details(temperature: 5.0, humidity: 1.0)
-        let wind = Wind(speed: 5.0)
-        let date = 557815.0
-        let forecast = Forecast(weathers: [main], details: details, wind: wind, date: date, imageData: Data())
-
-        expectation(forNotification: .NSManagedObjectContextDidSave, object: coreDataStack.mainContext)
-
-        self.weatherRepository.addForecast(forecast)
-
-        waitForExpectations(timeout: 3.0) { error in
-            XCTAssertNil(error, "Save did not occur")
-        }
-    }
-
 }

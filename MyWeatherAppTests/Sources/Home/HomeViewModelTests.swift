@@ -18,7 +18,7 @@ class HomeViewModelTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        coreDataStack = MockCoreDataStack()
+        coreDataStack = CoreDataStack()
         weatherRepository = WeatherRepository(coreDataStack: coreDataStack)
     }
 

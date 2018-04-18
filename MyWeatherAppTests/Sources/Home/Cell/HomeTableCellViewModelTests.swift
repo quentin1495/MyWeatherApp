@@ -11,7 +11,7 @@ import XCTest
 
 class HomeTableCellViewModelTests: XCTestCase {
     // MARK: Properties
-    let coreDataStack = MockCoreDataStack()
+    let coreDataStack = CoreDataStack()
 
     func testWhenViewModelIsSet_dataSourceIsSet() {
         let weatherEntity = WeatherEntity(context: coreDataStack.persistentContainer.viewContext)

@@ -17,7 +17,7 @@ class DetailsViewModelTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        coreDataStack = MockCoreDataStack()
+        coreDataStack = CoreDataStack()
         weatherRepository = WeatherRepository(managedObjectContext: coreDataStack.mainContext,
                                               coreDataStack: coreDataStack)
     }

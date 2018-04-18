@@ -24,7 +24,6 @@
 		DB40D6F5204BC6050027E5D7 /* Date+FoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB40D6F4204BC6050027E5D7 /* Date+FoundationTests.swift */; };
 		DB40D6F7204BCBE00027E5D7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DB40D6F6204BCBE00027E5D7 /* .swiftlint.yml */; };
 		DB42926B20518C66008B1A6D /* SearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42926A20518C66008B1A6D /* SearchFilter.swift */; };
-		DB42927020519044008B1A6D /* MockCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42926F20519044008B1A6D /* MockCoreDataStack.swift */; };
 		DB42927A2052C5FE008B1A6D /* DetailsTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4292792052C5FE008B1A6D /* DetailsTableCellViewModelTests.swift */; };
 		DB42927C2052C627008B1A6D /* HomeTableCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB42927B2052C627008B1A6D /* HomeTableCellViewModelTests.swift */; };
 		DB5AC1AF205FCB7D00467E87 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5AC1AE205FCB7D00467E87 /* AppConfig.swift */; };
@@ -94,7 +93,6 @@
 		DB40D6F4204BC6050027E5D7 /* Date+FoundationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+FoundationTests.swift"; sourceTree = "<group>"; };
 		DB40D6F6204BCBE00027E5D7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DB42926A20518C66008B1A6D /* SearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilter.swift; sourceTree = "<group>"; };
-		DB42926F20519044008B1A6D /* MockCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataStack.swift; sourceTree = "<group>"; };
 		DB4292792052C5FE008B1A6D /* DetailsTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableCellViewModelTests.swift; sourceTree = "<group>"; };
 		DB42927B2052C627008B1A6D /* HomeTableCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCellViewModelTests.swift; sourceTree = "<group>"; };
 		DB5AC1AE205FCB7D00467E87 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
@@ -261,7 +259,6 @@
 			children = (
 				DBA9E69C204B863A00E090D0 /* MockWebService.swift */,
 				DB0B4506204BB36100301892 /* MockForecastService.swift */,
-				DB42926F20519044008B1A6D /* MockCoreDataStack.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -562,7 +559,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA9E69D204B863A00E090D0 /* MockWebService.swift in Sources */,
-				DB42927020519044008B1A6D /* MockCoreDataStack.swift in Sources */,
 				DBA9E6A8204BA18F00E090D0 /* ForecastServiceTests.swift in Sources */,
 				DB8C004A204C0B6E0073C42A /* ImageServiceTests.swift in Sources */,
 				DBA9E690204A881300E090D0 /* WeatherRepositoryTests.swift in Sources */,
