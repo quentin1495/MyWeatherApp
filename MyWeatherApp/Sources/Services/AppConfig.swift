@@ -32,7 +32,7 @@ class AppConfig {
             data.forecasts.forEach { forecast in
                 var workingForecast = forecast
                 self.imageService.get(for: Router.image(iconName: forecast.weathers[0].icon ?? "")) { image, _ in
-                    guard let image = image, let data = UIImagePNGRepresentation(image) else {
+                    guard let image = image, let data = image.pngData() else {
                         return
                     }
                     workingForecast.imageData = data
